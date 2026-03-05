@@ -5,7 +5,7 @@ import { useQuizContext } from '@/entity/Quiz/contexts/quiz-context-provider';
 import { AnswerButtonProps, ButtonStatus } from '.';
 
 const AnswerButton = ({ answer, disableButton, setDisableButton }: AnswerButtonProps) => {
-    const { activeQuestion, setActiveQuestion, setFinished, data } = useQuizContext();
+    const { activeQuestion, setActiveQuestion, setFinished, setRewardCollected, data } = useQuizContext();
     const [status, setStatus] = useState<ButtonStatus>('idle');
 
     if (activeQuestion === null) return;
@@ -13,6 +13,7 @@ const AnswerButton = ({ answer, disableButton, setDisableButton }: AnswerButtonP
     const goToNextStep = () => {
         if (answer.isCorrect) {
             if (data.length - 1 === activeQuestion) {
+                setRewardCollected(data[activeQuestion].reward);
                 setFinished(true);
                 setActiveQuestion(null);
             } else {
