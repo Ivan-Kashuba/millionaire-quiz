@@ -1,0 +1,17 @@
+.menuWrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background: var(--black-5);
+}
+.menuWrapper button {
+    width: fit-content;
+    cursor: pointer;
+}
+
+.menuTopWrapper {
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px;
+}

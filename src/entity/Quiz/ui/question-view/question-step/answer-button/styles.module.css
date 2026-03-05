@@ -1,0 +1,87 @@
+.answerButton.selected {
+    border: 1px solid var(--orange-100);
+    background: var(--orange-5);
+}
+
+.answerButton.correct {
+    border: 1px solid var(--green-100) !important;
+    background: var(--green-5);
+}
+
+.answerButton.wrong {
+    border: 1px solid var(--red-100) !important;
+    background: var(--red-5);
+}
+
+.answerButton {
+    border-radius: 15px;
+    height: 72px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid var(--black-40);
+    transition: border 300ms ease;
+    position: relative;
+    background: var(--white-100);
+    color: var(--black-100);
+    font-size: 20px;
+    padding: 24px;
+}
+.answerButton span {
+    color: var(--orange-100);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.answerButton::after,
+.answerButton::before {
+    position: absolute;
+    transition: background-color 300ms ease;
+    content: '';
+    width: 17px;
+    height: 1px;
+    background: var(--black-40);
+    top: 50%;
+}
+.answerButton::before {
+    transform: translateX(-100%);
+    left: 0;
+}
+.answerButton::after {
+    transform: translateX(100%);
+    right: 0;
+}
+
+.answerButton:not(:disabled):hover {
+    cursor: pointer;
+    border: 1px solid var(--orange-100);
+}
+
+.answerButton:not(:disabled):hover::before,
+.answerButton:not(:disabled):hover::after {
+    background: var(--orange-100);
+}
+
+.answerButton.selected::before,
+.answerButton.selected::after {
+    background: var(--orange-100) !important;
+}
+
+.answerButton.correct::before,
+.answerButton.correct::after {
+    background: var(--green-100) !important;
+}
+
+.answerButton.wrong::before,
+.answerButton.wrong::after {
+    background: var(--red-100) !important;
+}
+
+@media (max-width: 768px) {
+    .answerButton {
+        height: 56px;
+        font-size: 14px;
+        padding: 20px;
+    }
+}

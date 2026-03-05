@@ -1,0 +1,122 @@
+[
+    {
+        "question": "What is the capital of Japan?",
+        "reward": "$500",
+        "answers": [
+            { "id": "A", "answer": "Seoul" },
+            { "id": "B", "answer": "Beijing" },
+            { "id": "C", "answer": "Tokyo", "isCorrect": true },
+            { "id": "D", "answer": "Osaka" }
+        ]
+    },
+    {
+        "question": "How many continents are there on Earth?",
+        "reward": "$1,000",
+        "answers": [
+            { "id": "A", "answer": "5" },
+            { "id": "B", "answer": "6" },
+            { "id": "C", "answer": "7", "isCorrect": true },
+            { "id": "D", "answer": "8" }
+        ]
+    },
+    {
+        "question": "Which planet is known as the Red Planet?",
+        "reward": "$2,000",
+        "answers": [
+            { "id": "A", "answer": "Venus" },
+            { "id": "B", "answer": "Mars", "isCorrect": true },
+            { "id": "C", "answer": "Jupiter" },
+            { "id": "D", "answer": "Saturn" }
+        ]
+    },
+    {
+        "question": "In which year did the first human land on the Moon?",
+        "reward": "$4,000",
+        "answers": [
+            { "id": "A", "answer": "1965" },
+            { "id": "B", "answer": "1969", "isCorrect": true },
+            { "id": "C", "answer": "1972" },
+            { "id": "D", "answer": "1975" }
+        ]
+    },
+    {
+        "question": "What is the chemical symbol for gold?",
+        "reward": "$8,000",
+        "answers": [
+            { "id": "A", "answer": "Go" },
+            { "id": "B", "answer": "Gd" },
+            { "id": "C", "answer": "Au", "isCorrect": true },
+            { "id": "D", "answer": "Ag" }
+        ]
+    },
+    {
+        "question": "Which ocean is the largest by surface area?",
+        "reward": "$16,000",
+        "answers": [
+            { "id": "A", "answer": "Atlantic Ocean" },
+            { "id": "B", "answer": "Indian Ocean" },
+            { "id": "C", "answer": "Arctic Ocean" },
+            { "id": "D", "answer": "Pacific Ocean", "isCorrect": true }
+        ]
+    },
+    {
+        "question": "Who wrote Romeo and Juliet?",
+        "reward": "$32,000",
+        "answers": [
+            { "id": "A", "answer": "Charles Dickens" },
+            { "id": "B", "answer": "Jane Austen" },
+            { "id": "C", "answer": "William Shakespeare", "isCorrect": true },
+            { "id": "D", "answer": "Oscar Wilde" }
+        ]
+    },
+    {
+        "question": "What is the hardest natural substance on Earth?",
+        "reward": "$64,000",
+        "answers": [
+            { "id": "A", "answer": "Gold" },
+            { "id": "B", "answer": "Iron" },
+            { "id": "C", "answer": "Diamond", "isCorrect": true },
+            { "id": "D", "answer": "Platinum" }
+        ]
+    },
+    {
+        "question": "Which country is home to the kangaroo?",
+        "reward": "$125,000",
+        "answers": [
+            { "id": "A", "answer": "New Zealand" },
+            { "id": "B", "answer": "South Africa" },
+            { "id": "C", "answer": "Australia", "isCorrect": true },
+            { "id": "D", "answer": "Indonesia" }
+        ]
+    },
+    {
+        "question": "How many bones are there in the adult human body?",
+        "reward": "$250,000",
+        "answers": [
+            { "id": "A", "answer": "186" },
+            { "id": "B", "answer": "206", "isCorrect": true },
+            { "id": "C", "answer": "226" },
+            { "id": "D", "answer": "246" }
+        ]
+    },
+    {
+        "question": "Which gas do plants absorb from the air for photosynthesis?",
+        "reward": "$500,000",
+        "answers": [
+            { "id": "A", "answer": "Oxygen" },
+            { "id": "B", "answer": "Nitrogen" },
+            { "id": "C", "answer": "Carbon dioxide", "isCorrect": true },
+            { "id": "D", "answer": "Hydrogen" }
+        ]
+    },
+    {
+        "question": "What is the longest river in the world?",
+        "reward": "$1,000,000",
+        "answers": [
+            { "id": "A", "answer": "Amazon" },
+            { "id": "B", "answer": "Nile", "isCorrect": true },
+            { "id": "C", "answer": "Yangtze" },
+            { "id": "D", "answer": "Mississippi" }
+        ]
+    }
+]

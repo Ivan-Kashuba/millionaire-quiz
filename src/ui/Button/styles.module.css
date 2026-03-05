@@ -1,0 +1,31 @@
+.generalButton {
+    background-color: var(--orange-100);
+    color: var(--white-100);
+    border: none;
+    border-radius: 12px;
+    max-width: 296px;
+    min-width: 296px;
+    text-align: center;
+    width: 100%;
+    padding: 20px 24px;
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.generalButton:hover {
+    background-color: var(--orange-80);
+}
+
+.generalButton:active {
+    background-color: var(--orange-120);
+}
+
+@media (max-width: 430px) {
+    .generalButton {
+        font-size: 14px;
+        padding: 16px 24px;
+        min-width: 100%;
+    }
+}

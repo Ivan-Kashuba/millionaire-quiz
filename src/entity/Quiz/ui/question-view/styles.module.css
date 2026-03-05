@@ -1,0 +1,23 @@
+.questionStepWrapper {
+    background: var(--black-5);
+    min-height: 100vh;
+}
+
+.content {
+    min-height: 100vh;
+    padding-right: 0;
+    gap: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .content {
+        padding-right: 16px;
+        justify-content: center;
+        padding-top: 62px;
+        padding-bottom: 48px;
+    }
+}

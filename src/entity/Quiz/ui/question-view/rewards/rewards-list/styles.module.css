@@ -1,0 +1,79 @@
+.rewardItem.selected {
+    border: 1px solid var(--orange-100) !important;
+    color: var(--orange-100) !important;
+}
+
+.rewardItem.selected::after,
+.rewardItem.selected::before {
+    background: var(--orange-100) !important;
+}
+
+.rewardItem {
+    border-radius: 9px;
+    width: 100%;
+    text-align: center;
+    gap: 8px;
+    border: 1px solid var(--black-40);
+    transition: border 300ms ease;
+    position: relative;
+    color: var(--black-100);
+    font-size: 20px;
+    padding: 8px;
+}
+
+.rewardItem::after,
+.rewardItem::before {
+    position: absolute;
+    transition: background-color 300ms ease;
+    content: '';
+    width: var(--reward-line);
+    height: 1px;
+    background: var(--black-40);
+    top: 50%;
+    z-index: 2;
+}
+
+.rewardItem::before {
+    transform: translateX(-100%);
+    left: 0;
+}
+
+.rewardItem::after {
+    transform: translateX(100%);
+    right: 0;
+}
+
+@media (max-width: 768px) {
+    .rewardItem {
+        font-size: 14px;
+    }
+}
+
+.rewardsWrapper {
+    padding: 16px var(--reward-line);
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+    background: var(--white-100);
+    min-width: 30%;
+}
+
+.rewardsItems {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+@media (max-width: 768px) {
+    .rewardsWrapper {
+        background: transparent;
+    }
+
+    .rewardsItems {
+        justify-content: start;
+
+    }
+}
