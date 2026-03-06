@@ -15,7 +15,7 @@ const Question = () => {
             <div className={styles.questionStepAnswers}>
                 {data[activeQuestion].answers.map((a) => (
                     <AnswerButton
-                        key={a.id}
+                        key={`${activeQuestion}-${a.id}`}
                         answer={a}
                         disableButton={disableButton}
                         setDisableButton={setDisableButton}

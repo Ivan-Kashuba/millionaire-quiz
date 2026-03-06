@@ -28,6 +28,7 @@
     font-size: 20px;
     padding: 24px;
 }
+
 .answerButton span {
     color: var(--orange-100);
     font-size: 20px;
@@ -44,10 +45,12 @@
     background: var(--black-40);
     top: 50%;
 }
+
 .answerButton::before {
     transform: translateX(-100%);
     left: 0;
 }
+
 .answerButton::after {
     transform: translateX(100%);
     right: 0;

@@ -11,6 +11,7 @@ const AnswerButton = ({ answer, disableButton, setDisableButton }: AnswerButtonP
     if (activeQuestion === null) return;
 
     const goToNextStep = () => {
+        (document.activeElement as HTMLElement)?.blur();
         if (answer.isCorrect) {
             if (data.length - 1 === activeQuestion) {
                 setRewardCollected(data[activeQuestion].reward);
@@ -24,6 +25,7 @@ const AnswerButton = ({ answer, disableButton, setDisableButton }: AnswerButtonP
             setFinished(true);
         }
     };
+
     const handleClick = () => {
         setDisableButton(true);
         setStatus('selected');
@@ -45,12 +47,12 @@ const AnswerButton = ({ answer, disableButton, setDisableButton }: AnswerButtonP
             aria-disabled={disableButton}
             aria-label={`answer ${answer.id}: ${answer.answer}`}
             className={`${styles.answerButton} ${status === 'selected'
-                    ? styles.selected
-                    : status === 'correct'
-                        ? styles.correct
-                        : status === 'wrong'
-                            ? styles.wrong
-                            : ''
+                ? styles.selected
+                : status === 'correct'
+                    ? styles.correct
+                    : status === 'wrong'
+                        ? styles.wrong
+                        : ''
                 }`}
             onClick={handleClick}
         >
